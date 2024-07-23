@@ -1,0 +1,24 @@
+body {
+    overflow: hidden;
+}
+
+.soundboard {
+}
+
+.soundboard__container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+} 
+
+.soundboard__button {
+    display: block;
+    border-radius: 5%;
+    flex: 1 1 calc(25% - 4%);
+    margin:  0 2%;
+    height: calc(10vh - 2%);
+}
+
+.soundboard__button:active {
+    background-color: white;
+}
