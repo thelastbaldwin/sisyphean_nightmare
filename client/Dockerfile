@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY package*.json ./
 
-ENV SOCKET_HOST=http://localhost:3000 
+ARG SOCKET_HOST='http://localhost:3000'
+
+ENV SOCKET_HOST=${SOCKET_HOST}
 
 RUN npm install
 
